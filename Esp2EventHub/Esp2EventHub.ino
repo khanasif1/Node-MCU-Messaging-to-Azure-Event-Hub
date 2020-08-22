@@ -50,7 +50,7 @@ String GetHttp(char* host,String url){
       String jsonMessage="";      
        client.print(String("POST ")+"/iotv2messageevents/messages HTTP/1.1\r\n"+
        "Host: IOTV2EventHubs-ns.servicebus.windows.net\r\n"+
-       "Authorization: SharedAccessSignature sr=https%3a%2f%2fiotv2eventhubs-ns.servicebus.windows.net%2fiotv2messageevents%2fmessages&sig=ZKCxOLzTo131zbEGpuE8fmFZeAyufVWcs%2fatJ%2fo3oME%3d&se=1587800082&skn=RootManageSharedAccessKey\r\n"+
+       "Authorization: SharedAccessSignature sr=https%3a%2f%2fiotv2eventhubs-ns.servicebus.windows.net%2fiotv2messageevents%2fmessages&sig=***Signature***&se=1587800082&skn=RootManageSharedAccessKey\r\n"+
        "Content-Type: application/atom+xml;type=entry;charset=utf-8\r\n" +       
        "Content-Length: " + data.length() +"\r\n"+
        "\r\n"+
